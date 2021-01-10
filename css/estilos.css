@@ -1,0 +1,22 @@
+h1 {
+  text-align: center;
+}
+form {
+  text-align: center;
+}
+.formulario {
+  padding-bottom: 20px;
+  background-color: wheat;
+}
+#botonEnvio {
+  font-size: 23px;
+}
+td,
+th {
+  border: solid red 1px;
+  padding: 10px;
+  text-align: center;
+}
+.tableFormat table {
+  margin: 10px auto;
+}

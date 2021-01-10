@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gestion de Gastos</title>
+    <link rel="stylesheet" type="text/css" href="css/estilos.css" />
+  </head>
+  <body>
+    <h1>Mi Aplicacion para gastos</h1>
+    <form id="transactionForm">
+      <div class="formulario">
+        <label>Tipo de Transaction</label>
+        <input name="tipo" id="ingreso" type="radio" value="Ingreso" />
+        <label for="ingreso">Ingreso</label>
+
+        <input name="tipo" type="radio" id="egreso" value="Egreso" />
+        <label for="egreso">Egreso</label>
+      </div>
+      <div class="formulario">
+        <label for="description">Descripcion</label>
+        <input name="description" id="description" />
+      </div>
+      <div class="formulario">
+        <label for="categoria">Categoria</label>
+        <input name="categoria" id="categoria" />
+      </div>
+      <div class="formulario">
+        <label for="monto">Monto</label>
+        <input name="monto" type="number" id="monto" />
+      </div>
+      <div class="formulario">
+        <button id="botonEnvio">Añadir</button>
+      </div>
+    </form>
+    <div class="tableFormat">
+      <table id="transactionTable">
+        <tr>
+          <th>Tipo</th>
+          <th>Descripcion</th>
+          <th>Monto</th>
+          <th>Categoria</th>
+        </tr>
+        
+      </table>
+    </div>
+    <script src="js/funciones.js"></script>
+  </body>
+</html>
